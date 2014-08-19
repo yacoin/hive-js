@@ -7,7 +7,8 @@ var ltcToBtc = require('./sochain').ltcToBtc
 var ExchangeRateFunctions = {
   bitcoin: getExchangeRates,
   testnet: getExchangeRates,
-  litecoin: getLitecoinExchangeRates
+  litecoin: getLitecoinExchangeRates,
+  yacoin: getYacoinExchangeRates
 }
 
 function BitcoinAverage(network){
@@ -32,6 +33,22 @@ function getLitecoinExchangeRates(callback){
       callback(null, rates)
     })
   })
+}
+
+function getYacoinExchangeRates(callback){
+   yacToBtc(function(err, yacRate){
+	 if(err) return callback(err);
+
+	 getExchangeRates(function(err, rates){
+	   if(err) return callback(err);
+
+	   for(var currency in rates){
+	     rates[currency] = rates[currency] * yacRate
+	   }
+
+	   callback(null, rates)
+	 })
+   })
 }
 
 function getExchangeRates(callback){

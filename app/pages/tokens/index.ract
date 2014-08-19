@@ -11,6 +11,9 @@
         {{#litecoin}}
           {{>svg_token_litecoin}}
         {{/litecoin}}
+        {{#yacoin}}
+          {{>svg_token_yacoin}}
+        {{/yacoin}}
       </span>
       <h3 class="_name">{{capitalize(token)}}</h3>
     </div>

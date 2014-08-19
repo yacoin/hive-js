@@ -11,3 +11,13 @@ module.exports = {
     default: 'LTC'
   }
 }
+
+module.exports = {
+  bitcoin: bitcoin,
+  testnet: bitcoin,
+  yacoin: {
+	default: 'YAC'
+  }
+}
+
+

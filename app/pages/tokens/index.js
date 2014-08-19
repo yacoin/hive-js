@@ -18,6 +18,10 @@ module.exports = function(el){
         {
           token: 'litecoin',
           litecoin: true
+        },
+        {
+            token: 'yacoin',
+            yacoin: true
         }
       ],
       capitalize: function(str){

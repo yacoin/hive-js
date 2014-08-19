@@ -256,6 +256,12 @@ textarea.placeholder_text {
   textarea::-webkit-input-placeholder {
     color: lighten($silver, 50%);;
   }
+  
+.yacoin {
+  input::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder {
+    color: lighten($silver, 50%);;
+  }
 
   input:-moz-placeholder,
   textarea:-moz-placeholder {

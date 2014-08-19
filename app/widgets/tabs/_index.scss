@@ -9,6 +9,12 @@
   }
 }
 
+.yacoin {
+  #tabs {
+    background-color: darken($silver, 20%);
+  }
+}
+
 #tabs .tabs {
   display: flex;
   justify-content: space-between;
@@ -45,6 +51,14 @@
 }
 
 .litecoin {
+  #tabs .tabs .tab {
+    &.active {
+        border-bottom: 4px solid lighten($silver, 10%);
+    }
+  }
+}
+
+.yacoin {
   #tabs .tabs .tab {
     &.active {
         border-bottom: 4px solid lighten($silver, 10%);

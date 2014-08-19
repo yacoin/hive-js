@@ -27,6 +27,12 @@
   }
 }
 
+.yacoin {
+  .sidebar__header {
+    background-color: darken($silver, 30%);
+  }
+}
+
 .sidebar__logo {
   width: 100px;
   height: 38px;
@@ -80,6 +86,12 @@
   }
 }
 
+.yacoin {
+  .sidebar__logout {
+    background-color: darken($silver, 30%);
+  }
+}
+
 .sidebar__support {
   @extend .sidebar__logout;
   border-left: 1px solid $purple--light;
@@ -104,6 +116,12 @@
 }
 
 .litecoin {
+  .sidebar__support {
+    border-left: 1px solid darken($silver, 20%);
+  }
+}
+
+.yacoin {
   .sidebar__support {
     border-left: 1px solid darken($silver, 20%);
   }
@@ -174,6 +192,13 @@
   }
 }
 
+.yacoin {
+  .settings__toggle {
+    background-color: darken($silver, 20%);
+    border-bottom: 1px solid darken($silver, 25%);
+  }
+}
+
 .settings__toggle-icon {
   width: 26px;
   height: 26px;
@@ -209,6 +234,12 @@
 }
 
 .litecoin {
+  .settings__group {
+    background-color: darken($silver, 25%);
+  }
+}
+
+.yacoin {
   .settings__group {
     background-color: darken($silver, 25%);
   }
@@ -268,6 +299,16 @@
 }
 
 .litecoin {
+  .settings__input-group {
+
+    ._input {
+      background-color: darken($silver, 30%);
+      border: 1px solid $silver;
+    }
+  }
+}
+
+.yacoin {
   .settings__input-group {
 
     ._input {

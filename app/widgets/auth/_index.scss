@@ -134,6 +134,14 @@
   }
 }
 
+.yacoin {
+  .auth__header {
+    ._passphrase {
+      background-color: darken($silver, 40%);
+    }
+  }
+}
+
 .passphrase__accept {
   display: flex;
   padding-top: 20px;
@@ -192,6 +200,17 @@
   }
 }
 
+.yacoin {
+  .passphrase__accept {
+    ._checkbox {
+      background-color: darken($silver, 20%);
+    }
+    ._check {
+      background-color: lighten($silver, 20%);
+    }
+  }
+}
+
 .passphrase__warning {
   font-size: 13px;
   background-color: $yellow;
@@ -226,6 +245,12 @@
 }
 
 .litecoin {
+  .auth__btngroup {
+    background-color: darken($silver, 20%);
+  }
+}
+
+.yacoin {
   .auth__btngroup {
     background-color: darken($silver, 20%);
   }
@@ -334,6 +359,16 @@
   }
 }
 
+.yacoin {
+  .auth__btn--loading {
+    background-color: $silver;
+    box-shadow:inset 0 1px 1px 1px darken($silver, 30%);
+    &:active {
+      box-shadow:inset 0 1px 1px 1px darken($silver, 30%);
+    }
+  }
+}
+
 .auth__btn--existing {
   @extend .hivebtn;
   color: white;
@@ -348,6 +383,13 @@
 }
 
 .litecoin {
+  .auth__btn--existing {
+    background-color: $silver;
+    box-shadow: 0 3px 0 0 darken($silver, 30%);
+  }
+}
+
+.yacoin {
   .auth__btn--existing {
     background-color: $silver;
     box-shadow: 0 3px 0 0 darken($silver, 30%);
@@ -532,6 +574,19 @@
   }
 }
 
+.yacoin {
+  .auth__input-group {
+    ._input {
+      background-color: darken($silver, 25%);
+      border: 1px solid $silver;
+
+      &:active, &:focus {
+       border: 1px solid $silver;
+      }
+    }
+  }
+}
+
 #setPin {
   @extend .jigsaw-light;
   background: none;
@@ -615,6 +670,20 @@
 }
 
 .litecoin {
+  .pinfield {
+    ._box {
+      background-color: darken($silver, 30%);
+    }
+
+    &.is_focused {
+      ._box {
+        border: 1px solid lighten($silver, 10%);
+      }
+    }
+  }
+}
+
+.yacoin {
   .pinfield {
     ._box {
       background-color: darken($silver, 30%);
