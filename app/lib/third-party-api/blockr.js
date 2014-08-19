@@ -13,6 +13,7 @@ var networks = {
   testnet: "https://tbtc.blockr.io/api/v1/",
   bitcoin: "https://btc.blockr.io/api/v1/",
   litecoin: "https://ltc.blockr.io/api/v1/",
+  //Currently not enabled. 
   yacoin: "https://yac.blockr.io/api/v1/"
 }
 
